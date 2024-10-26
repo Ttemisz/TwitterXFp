@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from twitterxfp import views
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("update_server/", views.update, name="update"),
     path("hello/", views.hello_world, name="hello_world"),
+    path("update_server/", views.update, name="update"),
+    
 ]
-
