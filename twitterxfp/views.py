@@ -2,12 +2,11 @@ from django.http import HttpResponse
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
 import git
-import os
 
 @csrf_exempt
 def update(request):
     if request.method == "POST":
-        # Pass the path of the directory where your project will be stored on PythonAnywhere
+        
         repo = git.Repo('/home/temistoclisxp58/TwitterXFp')
         origin = repo.remotes.origin
         origin.pull()

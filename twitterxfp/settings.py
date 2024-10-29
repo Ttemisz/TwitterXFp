@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'twitterxfp',
+    "rest_framework",
+    "contas",
+    "feed",
 ]
 
 MIDDLEWARE = [
@@ -56,7 +58,7 @@ ROOT_URLCONF = "twitterxfp.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "twitterxfp", "templates")],
+        "DIRS": [os.path.join(BASE_DIR,'feed', 'contas', "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
